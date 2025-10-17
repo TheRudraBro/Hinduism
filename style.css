@@ -1,0 +1,13 @@
+body {
+    box-sizing: border-box;
+}
+
+.om-symbol {
+    font-family: 'Times New Roman', serif;
+    font-size: 2rem;
+    color: #f59e0b;
+}
+
+.pulse-ring {
+    animation: pulse-ring 1.5s cubic-bezier(0.215, 0.61, 0.355, 1) infinite;
+}
