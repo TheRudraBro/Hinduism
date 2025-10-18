@@ -72,23 +72,21 @@ border-radius: 10px;
         transform: translatey(0);
     }
 }
-.typing-smooth {
-  font-size: 1.125rem; /* text-lg */
-  font-weight: 600;     /* font-semibold */
-  margin-bottom: 1rem;  /* mb-4 */
+.typing-fade {
+  font-size: 1.125rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
   display: inline-block;
-  overflow: hidden;
   white-space: nowrap;
-  border-right: 3px solid #38bdf8; /* cursor */
-  animation: typingWords 8s steps(8, end) forwards, blink 0.7s step-end infinite;
+  overflow: hidden;
 }
 
-/* Adjust steps(n) to number of words in text */
-@keyframes typingWords {
-  from { width: 0; }
-  to { width: 100%; }
+.word {
+  opacity: 0;
+  display: inline-block;
+  transition: opacity 0.6s ease; /* smooth fade-in */
+  margin-right: 5px; /* spacing between words */
 }
-
-@keyframes blink {
-  50% { border-color: transparent; }
+.word.visible {
+  opacity: 1;
 }
