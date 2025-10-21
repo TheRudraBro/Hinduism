@@ -6,6 +6,7 @@
     <title>Hare Krishna</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
 <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
@@ -30,7 +31,7 @@
     </nav>
 
     <!-- Header -->
-    <header class="max-w-[1200px] rounded-lg mx-auto bg-[#3E7BA6] shadow-sm">
+    <header class="max-w-[1200px] rounded-lg mx-auto bg-[#777250] shadow-sm">
         <div class="max-w-4xl mx-auto px-4 py-6 text-center">
             <h2 class="text-3xl font-bold text-white mb-2">Japa Meditation Counter</h2>
             <p class="text-white">Click the button each time you complete one Hare Krishna mantra</p>
@@ -42,23 +43,23 @@
     </header>
 
     <!-- Main Content -->
-    <main class="max-w-4xl mx-auto px-4 py-8">
-        <div class="bg-white rounded-2xl shadow-xl p-8 lotus-bg">
+    <main class="max-w-[1200px] mx-auto px-4 py-8">
+        <div class="bg-[#777250] rounded-2xl shadow-xl p-8 lotus-bg">
             <!-- Stats Display -->
             <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
-                <div class="bg-white/80 rounded-xl p-6 text-center shadow-md">
+                <div class="bg-white rounded-xl p-6 text-center shadow-md">
                     <h3 class="text-lg font-semibold text-orange-800 mb-2">Current Mala</h3>
                     <div class="text-3xl font-bold text-orange-600" id="currentCount">0</div>
                     <div class="text-sm text-orange-500 mt-1">/ 108</div>
                 </div>
                 
-                <div class="bg-white/80 rounded-xl p-6 text-center shadow-md">
+                <div class="bg-white rounded-xl p-6 text-center shadow-md">
                     <h3 class="text-lg font-semibold text-orange-800 mb-2">Completed Mala</h3>
                     <div class="text-3xl font-bold text-green-600" id="completedRounds">0</div>
                     <div class="text-sm text-orange-500 mt-1">Mala</div>
                 </div>
                 
-                <div class="bg-white/80 rounded-xl p-6 text-center shadow-md">
+                <div class="bg-white rounded-xl p-6 text-center shadow-md">
                     <h3 class="text-lg font-semibold text-orange-800 mb-2">Total Mala Japa</h3>
                     <div class="text-3xl font-bold text-purple-600" id="totalMantras">0</div>
                     <div class="text-sm text-orange-500 mt-1">Chanted</div>
@@ -66,9 +67,9 @@
             </div>
 
             <!-- Progress Bar -->
-            <div class="mb-8">
+            <div class="mb-8 ">
                 <div class="flex justify-between items-center mb-2">
-                    <span class="text-sm font-medium text-orange-700">Round Progress</span>
+                    <span class="text-sm font-medium text-white">Round Progress</span>
                     <span class="text-sm text-orange-600" id="progressText">0%</span>
                 </div>
                 <div class="w-full bg-orange-200 rounded-full h-4">
@@ -81,12 +82,11 @@
             <div class="text-center mb-8">
                 <div class="relative inline-block">
                     <div class="absolute inset-0 bg-orange-400 rounded-full pulse-ring" id="pulseRing" style="display: none;"></div>
-                    <button id="chantButton" 
-                            class="chant-button relative bg-gradient-to-br from-orange-500 to-yellow-500 hover:from-orange-600 hover:to-yellow-600 text-white font-bold py-8 px-12 rounded-full text-2xl shadow-2xl transform transition-all duration-150 hover:shadow-3xl focus:outline-none focus:ring-4 focus:ring-orange-300">
+                    <button id="chantButton" class="chant-button relative bg-white text-orange-800 font-bold p-8 rounded-xl text-2xl shadow-2xl transform transition-all duration-150 hover:shadow-3xl focus:outline-none focus:ring-4 focus:ring-black/20">
                         🙏 Hare Krishna 🙏
                     </button>
                 </div>
-                <p class="mt-4 text-orange-700 text-sm">Click for each completed mantra</p>
+                <p class="mt-4 text-white text-sm">Click for each completed mantra</p>
             </div>
 
             <!-- Round Completion Message -->
