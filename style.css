@@ -5,19 +5,3 @@
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     transition: background-color 0.3s, box-shadow 0.3s;
 }
- .animated-img {
-    @apply w-full h-80 object-cover rounded-2xl shadow-lg;
-    animation: floatZoom 6s ease-in-out infinite;
-  }
-
-  /* 🌊 Smooth continuous animation */
-  @keyframes floatZoom {
-    0%, 100% {
-      transform: translateY(0) scale(1);
-      filter: brightness(1);
-    }
-    50% {
-      transform: translateY(-10px) scale(1.05);
-      filter: brightness(1.1);
-    }
-  }
