@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+<script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <title>Document</title>
+</head>
+<body class="bg-[#777255]">
+  <!-- Header -->
+    <header class="max-w-[1200px] rounded-lg mx-auto bg-[#777250] shadow-sm">
+        <!-- Background Image -->
+         
+        </div>
+        <div class="max-w-4xl mx-auto px-4 py-6 text-center">
+            <h2 class="text-3xl font-bold text-white mb-2">Japa Meditation Counter</h2>
+            <p class="text-white">Click the button each time you complete one Hare Krishna mantra</p>
+            <p class="mt-4 text-white italic">
+                "Hare Krishna, Hare Krishna, Krishna Krishna, Hare Hare<br>
+                Hare Rama, Hare Rama, Rama Rama, Hare Hare"
+            </p>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main class="max-w-[1200px] mx-auto px-4 py-8">
+        <div class="bg-[#514d30] rounded-2xl shadow-xl p-8 lotus-bg">
+            <!-- Stats Display -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
+                <div class="bg-white rounded-xl p-6 text-center shadow-md">
+                    <h3 class="text-lg font-semibold text-orange-800 mb-2">Current Mala</h3>
+                    <div class="text-3xl font-bold text-orange-600" id="currentCount">0</div>
+                    <div class="text-sm text-orange-500 mt-1">/ 108</div>
+                </div>
+                
+                <div class="bg-white rounded-xl p-6 text-center shadow-md">
+                    <h3 class="text-lg font-semibold text-orange-800 mb-2">Completed Mala</h3>
+                    <div class="text-3xl font-bold text-green-600" id="completedRounds">0</div>
+                    <div class="text-sm text-orange-500 mt-1">Mala</div>
+                </div>
+                
+                <div class="bg-white rounded-xl p-6 text-center shadow-md">
+                    <h3 class="text-lg font-semibold text-orange-800 mb-2">Total Mala Japa</h3>
+                    <div class="text-3xl font-bold text-purple-600" id="totalMantras">0</div>
+                    <div class="text-sm text-orange-500 mt-1">Chanted</div>
+                </div>
+            </div>
+
+            <!-- Progress Bar -->
+            <div class="mb-8 ">
+                <div class="flex justify-between items-center mb-2">
+                    <span class="text-sm font-medium text-white">Round Progress</span>
+                    <span class="text-sm text-white" id="progressText">0%</span>
+                </div>
+                <div class="w-full bg-orange-200 rounded-full h-4">
+                    <div class="bg-gradient-to-r from-orange-500 to-yellow-500 h-4 rounded-full transition-all duration-300 ease-out" 
+                         style="width: 0%" id="progressBar"></div>
+                </div>
+            </div>
+
+            <!-- Chant Button -->
+            <div class="text-center mb-8">
+                <div class="relative inline-block">
+                    <div class="absolute inset-0 bg-orange-400 rounded-full pulse-ring" id="pulseRing" style="display: none;"></div>
+                    <button id="chantButton" class="chant-button relative bg-white text-orange-800 font-bold p-8 rounded-xl text-2xl shadow-2xl transform transition-all duration-150 hover:shadow-3xl focus:outline-none focus:ring-4 focus:ring-black/20">
+                        🙏 Hare Krishna 🙏
+                    </button>
+                </div>
+                <p class="mt-4 text-white text-sm">Click for each completed mantra</p>
+            </div>
+
+            <!-- Round Completion Message -->
+            <div id="roundComplete" class="hidden bg-green-100 border-l-4 border-green-500 text-green-700 p-4 rounded-r-lg mb-6">
+                <div class="flex items-center">
+                    <span class="text-2xl mr-3">🎉</span>
+                    <div>
+                        <p class="font-bold">Round Completed!</p>
+                        <p class="text-sm">You have completed another round of 108 mantras. Hare Krishna! 🙏</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Reset Button -->
+          
+            <div id="resetButton" class="text-center bg-orange-800 rounded-lg p-3 text-white font-semibold hover:bg-red-600 cursor-pointer mx-auto w-35">
+                <button id="resetButton" class="btn-reset">
+   Reset Counter
+</button>
+
+
+            </div>
+        </div>
+
+        <footer>
+    <div class="max-w-[1200px] mx-auto px-4 py-6 text-center text-white">
+        <p>&copy; 2024 Japa Meditation Counter. All rights reserved Rudra Mojumder.</p>
+        </footer>
+         <script src="script.js"></script>   
+</body>
+</html>
