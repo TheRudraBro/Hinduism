@@ -12,3 +12,24 @@ html {
     background-color: #777250;
     box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
 }
+ .fade-in {
+      opacity: 0;
+      transform: translateY(20px);
+      transition: opacity 0.8s ease, transform 0.8s ease;
+    }
+    .fade-in.show {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    #bookContent {
+      opacity: 0;
+      visibility: hidden;
+      transform: translateY(20px);
+      transition: opacity 1s ease, transform 1s ease, visibility 1s;
+    }
+
+    #bookContent.show {
+      opacity: 1;
+      visibility: visible;
+      transform: translateY(0);
+    }
