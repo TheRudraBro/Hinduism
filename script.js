@@ -100,21 +100,3 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     }
   });
 });
-
-
-
-
-   const readBtn = document.getElementById('readBookBtn');
-    const bookContent = document.getElementById('bookContent');
-    let isVisible = false;
-
-    readBtn.addEventListener('click', () => {
-      isVisible = !isVisible;
-      if (isVisible) {
-        bookContent.classList.add('show');
-        readBtn.textContent = 'Hide Book';
-      } else {
-        bookContent.classList.remove('show');
-        readBtn.textContent = 'Read Book';
-      }
-    });

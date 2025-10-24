@@ -12,11 +12,12 @@ html {
     background-color: #777250;
     box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
 }
- .fade-in {
+     .fade-in {
       opacity: 0;
       transform: translateY(20px);
-      transition: opacity 0.8s ease, transform 0.8s ease;
+      transition: opacity 1s ease, transform 1s ease;
     }
+
     .fade-in.show {
       opacity: 1;
       transform: translateY(0);

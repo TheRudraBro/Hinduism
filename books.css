@@ -1,0 +1,24 @@
+.fade-in {
+      opacity: 0;
+      transform: translateY(20px);
+      transition: opacity 7s ease, transform 7s ease;
+    }
+.fade-out {
+      opacity: 0;
+      transform: translateY(20px);
+      transition: opacity 7s ease, transform 7s ease;
+    }
+
+    .fade-in.show {
+      opacity: 1;
+      transform: translateY(0);
+    }
+      .fade-box.show {
+      display: block;
+      opacity: 1;
+      transform: translateY(0);
+    }
+    .fade-box.hide {
+      opacity: 0;
+      transform: translateY(20px);
+    }
