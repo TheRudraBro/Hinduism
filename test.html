@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bhagavad Gita Chapters</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    /* Page fade-in effect */
+    body {
+      animation: fadeIn 1s ease-in;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+
+    /* Smooth fade transition for sections */
+    .fade {
+      opacity: 0;
+      visibility: hidden;
+      transition: opacity 0.8s ease;
+    }
+    .fade.show {
+      opacity: 1;
+      visibility: visible;
+    }
+  </style>
+</head>
+<body class="bg-[#f8f5ee] min-h-screen">
+
+  <!-- Navbar -->
+  <nav class="bg-white shadow-md">
+    <div class="max-w-6xl mx-auto px-6 flex justify-between items-center h-16">
+      <h1 class="text-xl font-bold text-black">Hare Krishna</h1>
+      <ul class="flex gap-6">
+        <li><a href="#" class="text-black hover:bg-[#777250] px-3 py-2 rounded">Home</a></li>
+        <li><a href="#" class="text-black hover:bg-[#777250] px-3 py-2 rounded">Books</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Header -->
+  <section class="text-center py-10">
+    <h1 class="text-3xl font-extrabold mb-6">📖 শ্রীমদ্ভগবদ্গীতা যথাযথ</h1>
+    <button id="readBtn" class="px-6 py-3 bg-[#777250] text-white rounded-lg hover:bg-[#5f5a40] transition">
+      Read Book
+    </button>
+  </section>
+
+  <!-- Chapter List -->
+  <div id="chapterList" class="fade max-w-3xl mx-auto text-center">
+    <h2 class="text-2xl font-bold mb-4">চ্যাপ্টার বাছাই করুন:</h2>
+    <div class="grid grid-cols-2 sm:grid-cols-3 gap-4">
+      <!-- 18 chapters -->
+      <button class="chapter-btn bg-[#d9d4b2] hover:bg-[#c7c099] p-3 rounded">Chapter 1</button>
+      <button class="chapter-btn bg-[#d9d4b2] hover:bg-[#c7c099] p-3 rounded">Chapter 2</button>
+      <button class="chapter-btn bg-[#d9d4b2] hover:bg-[#c7c099] p-3 rounded">Chapter 3</button>
+      <button class="chapter-btn bg-[#d9d4b2] hover:bg-[#c7c099] p-3 rounded">Chapter 4</button>
+      <button class="chapter-btn bg-[#d9d4b2] hover:bg-[#c7c099] p-3 rounded">Chapter 5</button>
+      <button class="chapter-btn bg-[#d9d4b2] hover:bg-[#c7c099] p-3 rounded">Chapter 6</button>
+      <button class="chapter-btn bg-[#d9d4b2] hover:bg-[#c7c099] p-3 rounded">Chapter 7</button>
+      <button class="chapter-btn bg-[#d9d4b2] hover:bg-[#c7c099] p-3 rounded">Chapter 8</button>
+      <button class="chapter-btn bg-[#d9d4b2] hover:bg-[#c7c099] p-3 rounded">Chapter 9</button>
+      <button class="chapter-btn bg-[#d9d4b2] hover:bg-[#c7c099] p-3 rounded">Chapter 10</button>
+      <button class="chapter-btn bg-[#d9d4b2] hover:bg-[#c7c099] p-3 rounded">Chapter 11</button>
+      <button class="chapter-btn bg-[#d9d4b2] hover:bg-[#c7c099] p-3 rounded">Chapter 12</button>
+      <button class="chapter-btn bg-[#d9d4b2] hover:bg-[#c7c099] p-3 rounded">Chapter 13</button>
+      <button class="chapter-btn bg-[#d9d4b2] hover:bg-[#c7c099] p-3 rounded">Chapter 14</button>
+      <button class="chapter-btn bg-[#d9d4b2] hover:bg-[#c7c099] p-3 rounded">Chapter 15</button>
+      <button class="chapter-btn bg-[#d9d4b2] hover:bg-[#c7c099] p-3 rounded">Chapter 16</button>
+      <button class="chapter-btn bg-[#d9d4b2] hover:bg-[#c7c099] p-3 rounded">Chapter 17</button>
+      <button class="chapter-btn bg-[#d9d4b2] hover:bg-[#c7c099] p-3 rounded">Chapter 18</button>
+    </div>
+  </div>
+
+  <!-- Chapter Text -->
+  <div id="chapterText" class="fade max-w-3xl mx-auto text-center p-6 bg-white rounded shadow mt-10">
+    <h2 id="chapterTitle" class="text-2xl font-bold mb-4">huewffffffp</h2>
+    <p id="chapterContent" class="text-gray-700"></p>
+    <button id="backBtn" class="mt-6 px-5 py-2 bg-[#777250] text-white rounded hover:bg-[#5f5a40] transition">
+      ← Back to Chapters
+    </button>
+  </div>
+
+  <script>
+    const readBtn = document.getElementById('readBtn');
+    const chapterList = document.getElementById('chapterList');
+    const chapterText = document.getElementById('chapterText');
+    const backBtn = document.getElementById('backBtn');
+    const chapterTitle = document.getElementById('chapterTitle');
+    const chapterContent = document.getElementById('chapterContent');
+    const chapters = document.querySelectorAll('.chapter-btn');
+
+    // Dummy text for each chapter
+    const chapterData = {
+      1: "Chapter 1: Arjuna Vishada Yoga — অর্জুনের বিভ্রান্তি ও যুদ্ধ থেকে পলায়ন।",
+      2: "Chapter 2: Sankhya Yoga — জ্ঞান, আত্মা ও কর্তব্যের শিক্ষা।",
+      3: "Chapter 3: Karma Yoga — কর্ম ও কর্তব্যের গুরুত্ব।",
+      4: "Chapter 4: Jnana Yoga — জ্ঞানের মাধ্যমে মুক্তির পথ।",
+      5: "Chapter 5: Karma Vairagya Yoga — কর্ম ও বৈরাগ্যের মেলবন্ধন।",
+      6: "Chapter 6: Dhyana Yoga — ধ্যানের মাধ্যমে আত্ম উপলব্ধি।",
+      7: "Chapter 7: Gyaan Vigyaan Yoga — জ্ঞান ও বিজ্ঞানের যোগ।",
+      8: "Chapter 8: Akshara Brahma Yoga — পরম ব্রহ্মের জ্ঞান।",
+      9: "Chapter 9: Raja Vidya Yoga — রাজবিদ্যা ও রাজগুহ্য যোগ।",
+      10: "Chapter 10: Vibhuti Yoga — কৃষ্ণের ঐশ্বর্যের বর্ণনা।",
+      11: "Chapter 11: Vishwaroopa Darshana — কৃষ্ণের বিশ্বরূপ দর্শন।",
+      12: "Chapter 12: Bhakti Yoga — ভক্তির শ্রেষ্ঠত্ব।",
+      13: "Chapter 13: Kshetra Kshetragya Yoga — দেহ ও আত্মার পার্থক্য।",
+      14: "Chapter 14: Gunatraya Vibhaga Yoga — তিন গুণের বিভাজন।",
+      15: "Chapter 15: Purushottama Yoga — পরম পুরুষোত্তমের জ্ঞান।",
+      16: "Chapter 16: Daivasura Sampad Vibhaga Yoga — দেবী ও অসুর সম্পদের ভেদ।",
+      17: "Chapter 17: Shraddha Traya Vibhaga Yoga — তিন প্রকার শ্রদ্ধা।",
+      18: "Chapter 18: Moksha Sannyasa Yoga — সন্ন্যাস ও মুক্তির চূড়ান্ত শিক্ষা।",
+    };
+
+    // Read Book → Show Chapter List
+    readBtn.addEventListener('click', () => {
+      chapterList.classList.add('show');
+    });
+
+    // Click any chapter
+    chapters.forEach((btn, index) => {
+      btn.addEventListener('click', () => {
+        const chNum = index + 1;
+        chapterTitle.textContent = `📘 ${btn.textContent}`;
+        chapterContent.textContent = chapterData[chNum];
+        chapterList.classList.remove('show');
+        chapterText.classList.add('show');
+      });
+    });
+
+    // Back button → return to list
+    backBtn.addEventListener('click', () => {
+      chapterText.classList.remove('show');
+      chapterList.classList.add('show');
+    });
+  </script>
+
+</body>
+</html>
