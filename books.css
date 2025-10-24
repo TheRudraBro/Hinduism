@@ -22,3 +22,22 @@
       opacity: 0;
       transform: translateY(20px);
     }
+        .fade-box {
+      opacity: 0;
+      transform: translateY(20px);
+      transition: opacity 0.8s ease-in-out, transform 0.8s ease-in-out;
+      display: none;
+    }
+
+    /* Fade-in effect */
+    .fade-box.show {
+      display: block;
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    /* Fade-out effect */
+    .fade-box.hide {
+      opacity: 0;
+      transform: translateY(20px);
+    }
