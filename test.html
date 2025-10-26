@@ -1,129 +1,231 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Hinduism - Sanatan Dharma</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Sanatan Dharma — Hinduism Resource</title>
   <script src="https://cdn.tailwindcss.com"></script>
+  <meta name="description" content="Information about Hinduism — scriptures, deities, festivals, temples, philosophy, blog, events, gallery and more."/>
 </head>
+<body class="bg-orange-50 text-gray-800 font-sans leading-relaxed">
 
-<body class="bg-orange-50 text-gray-800 font-sans">
+  <!-- NAVBAR -->
+  <header class="bg-orange-700 text-white sticky top-0 z-50 shadow">
+    <div class="max-w-7xl mx-auto flex items-center justify-between px-4 py-3">
+      <div class="flex items-center gap-3">
+        <div class="text-2xl font-bold">Sanatan Dharma</div>
+        <div class="hidden md:block text-sm text-yellow-200">The Eternal Way of Life</div>
+      </div>
 
-  <!-- Navbar -->
-  <header class="bg-orange-700 text-white py-4 shadow-lg">
-    <div class="container mx-auto flex justify-between items-center px-6">
-      <h1 class="text-2xl font-bold">Sanatan Dharma</h1>
-      <nav class="space-x-6 hidden md:flex">
+      <nav class="hidden md:flex items-center gap-6">
         <a href="#home" class="hover:text-yellow-300">Home</a>
         <a href="#about" class="hover:text-yellow-300">About</a>
         <a href="#deities" class="hover:text-yellow-300">Deities</a>
         <a href="#festivals" class="hover:text-yellow-300">Festivals</a>
-        <a href="#teachings" class="hover:text-yellow-300">Teachings</a>
+        <a href="#scriptures" class="hover:text-yellow-300">Scriptures</a>
+        <a href="#temples" class="hover:text-yellow-300">Temples</a>
+        <a href="#philosophy" class="hover:text-yellow-300">Philosophy</a>
+        <a href="#blog" class="hover:text-yellow-300">Blog</a>
+        <a href="#events" class="hover:text-yellow-300">Events</a>
+        <a href="#gallery" class="hover:text-yellow-300">Gallery</a>
         <a href="#contact" class="hover:text-yellow-300">Contact</a>
       </nav>
+
+      <div class="flex items-center gap-3">
+        <div class="hidden md:flex items-center gap-2 text-sm">
+          <button id="lang-en" class="px-2 py-1 rounded bg-yellow-300 text-black font-medium">EN</button>
+          <button id="lang-bn" class="px-2 py-1 rounded bg-orange-600 text-white">BN</button>
+        </div>
+
+        <!-- Mobile menu button -->
+        <button id="menu-btn" class="md:hidden p-2 rounded hover:bg-orange-600/60">
+          <svg id="menu-open" xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 8h16M4 16h16" /></svg>
+          <svg id="menu-close" xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 hidden" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/></svg>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile menu -->
+    <div id="mobile-menu" class="md:hidden bg-orange-600/95 text-white hidden">
+      <div class="px-4 py-4 flex flex-col gap-3">
+        <a href="#home" class="block">Home</a>
+        <a href="#about" class="block">About</a>
+        <a href="#deities" class="block">Deities</a>
+        <a href="#festivals" class="block">Festivals</a>
+        <a href="#scriptures" class="block">Scriptures</a>
+        <a href="#temples" class="block">Temples</a>
+        <a href="#philosophy" class="block">Philosophy</a>
+        <a href="#blog" class="block">Blog</a>
+        <a href="#events" class="block">Events</a>
+        <a href="#gallery" class="block">Gallery</a>
+        <a href="#contact" class="block">Contact</a>
+        <div class="flex gap-2 mt-2">
+          <button id="mobile-en" class="px-2 py-1 rounded bg-yellow-300 text-black text-sm">EN</button>
+          <button id="mobile-bn" class="px-2 py-1 rounded bg-orange-600 text-white text-sm">BN</button>
+        </div>
+      </div>
     </div>
   </header>
 
-  <!-- Hero / Home Section -->
-  <section id="home" class="relative bg-[url('https://images.unsplash.com/photo-1593642634315-48f5414c3ad9')] bg-cover bg-center text-white h-[90vh] flex items-center justify-center">
-    <div class="absolute inset-0 bg-black bg-opacity-60"></div>
-    <div class="relative text-center z-10 p-6">
-      <h2 class="text-4xl md:text-5xl font-bold mb-4">Welcome to Sanatan Dharma</h2>
-      <p class="text-lg md:text-xl mb-6">The Eternal Way of Life — rooted in devotion, truth, and spirituality.</p>
-      <a href="#about" class="bg-yellow-400 text-black px-6 py-3 rounded-full font-semibold hover:bg-yellow-500">Learn More</a>
+  <!-- HERO / HOME -->
+  <section id="home" class="relative bg-[url('https://images.unsplash.com/photo-1549893075-3b9d0e69a1d4')] bg-cover bg-center h-[78vh] flex items-center">
+    <div class="absolute inset-0 bg-black/55"></div>
+    <div class="max-w-5xl mx-auto relative z-10 text-center text-white px-6">
+      <h1 class="text-4xl md:text-5xl font-extrabold mb-4" data-en="Welcome to Sanatan Dharma" data-bn="স্বাগতম সনাতন ধর্মে">Welcome to Sanatan Dharma</h1>
+      <p class="text-lg md:text-xl mb-6" data-en="The Eternal Way of Life — rooted in devotion, truth, and spirituality." data-bn="চিরন্তন জীবনধারা — ভক্তি, সত্য ও আধ্যাত্মিকতায় ভিত্তি।">The Eternal Way of Life — rooted in devotion, truth, and spirituality.</p>
+      <div class="flex justify-center gap-4">
+        <a href="#about" class="bg-yellow-400 text-black px-6 py-3 rounded-full font-semibold shadow">Learn More</a>
+        <a href="#scriptures" class="bg-white/20 border border-white px-6 py-3 rounded-full">Scriptures</a>
+      </div>
     </div>
   </section>
 
-  <!-- About Hinduism -->
+  <!-- ABOUT -->
   <section id="about" class="py-16 bg-white">
-    <div class="max-w-5xl mx-auto px-6 text-center">
-      <h2 class="text-3xl font-bold text-orange-700 mb-6">About Hinduism</h2>
-      <p class="text-lg leading-relaxed text-gray-700">
-        Hinduism, known as Sanatan Dharma, is the world’s oldest religion. It originated thousands of years ago in ancient India and has no single founder. It teaches the principles of Dharma (righteousness), Karma (action), and Moksha (liberation). Hinduism embraces peace, truth, devotion, and respect for all living beings.
+    <div class="max-w-4xl mx-auto px-6 text-center">
+      <h2 class="text-3xl font-bold text-orange-700 mb-6" data-en="About Hinduism" data-bn="হিন্দু ধর্ম সম্পর্কে">About Hinduism</h2>
+      <p class="text-lg text-gray-700" data-en="Hinduism, known as Sanatan Dharma, developed over thousands of years in ancient India. It has no single founder and is guided by scriptures like the Vedas, Upanishads, Bhagavad Gita and Puranas. Core beliefs include Dharma (duty), Karma (action), Moksha (liberation) and reincarnation." data-bn="সনাতন ধর্ম হাজার বছরের উপর ভিত্তি করে গঠিত; এটি কোনো একক প্রতিষ্ঠাতার নয়। প্রধান গ্রন্থ- বেদ, উপনিষদ, ভাগবত গীতা ও পুরাণ। মূল বিশ্বাস: ধর্ম, কর্ম, মোক্ষ এবং পুনর্জন্ম।">
+        Hinduism, known as Sanatan Dharma, developed over thousands of years in ancient India. It has no single founder and is guided by scriptures like the Vedas, Upanishads, Bhagavad Gita and Puranas. Core beliefs include Dharma (duty), Karma (action), Moksha (liberation) and reincarnation.
       </p>
     </div>
   </section>
 
-  <!-- Deities Section -->
+  <!-- DEITIES -->
   <section id="deities" class="py-16 bg-orange-100">
-    <div class="max-w-6xl mx-auto px-6 text-center">
-      <h2 class="text-3xl font-bold text-orange-700 mb-10">Divine Deities</h2>
+    <div class="max-w-6xl mx-auto px-6">
+      <h2 class="text-3xl font-bold text-orange-700 text-center mb-8" data-en="Deities" data-bn="দেবদেবী">Deities</h2>
+      <p class="text-center text-gray-700 mb-10" data-en="Major gods and goddesses, with short descriptions and common mantras." data-bn="প্রধান দেবতা ও দেবী, সংক্ষিপ্ত বর্ণনা ও সাধারণ মন্ত্রসহ।">Major gods and goddesses, with short descriptions and common mantras.</p>
+
       <div class="grid md:grid-cols-3 gap-8">
-        <div class="bg-white shadow-lg rounded-xl p-6">
-          <img src="https://upload.wikimedia.org/wikipedia/commons/3/3c/Krishna_Janmashtami.jpg" alt="Lord Krishna" class="rounded-lg h-48 w-full object-cover mb-4">
-          <h3 class="font-semibold text-xl text-orange-700">Lord Krishna</h3>
-          <p class="text-gray-600">The eighth incarnation of Lord Vishnu, symbol of love, wisdom, and divine joy.</p>
-        </div>
+        <!-- Krishna -->
+        <article class="bg-white rounded-xl shadow p-6">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/3/3c/Krishna_Janmashtami.jpg" alt="Lord Krishna" class="rounded-lg h-44 w-full object-cover mb-4">
+          <h3 class="text-xl font-semibold text-orange-700 mb-1">Lord Krishna</h3>
+          <p class="text-gray-600 mb-2">The eighth avatar of Vishnu; teacher of the Bhagavad Gita — symbol of love and wisdom.</p>
+          <p class="text-sm italic text-gray-500">Mantra: "Om Namo Bhagavate Vasudevaya"</p>
+        </article>
 
-        <div class="bg-white shadow-lg rounded-xl p-6">
-          <img src="https://upload.wikimedia.org/wikipedia/commons/3/3a/Lord_Shiva_Murudeshwara.jpg" alt="Lord Shiva" class="rounded-lg h-48 w-full object-cover mb-4">
-          <h3 class="font-semibold text-xl text-orange-700">Lord Shiva</h3>
-          <p class="text-gray-600">The destroyer and transformer, representing meditation, power, and rebirth.</p>
-        </div>
+        <!-- Shiva -->
+        <article class="bg-white rounded-xl shadow p-6">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/3/3a/Lord_Shiva_Murudeshwara.jpg" alt="Lord Shiva" class="rounded-lg h-44 w-full object-cover mb-4">
+          <h3 class="text-xl font-semibold text-orange-700 mb-1">Lord Shiva</h3>
+          <p class="text-gray-600 mb-2">The destroyer and transformer; worshipped as the supreme yogi and meditator.</p>
+          <p class="text-sm italic text-gray-500">Mantra: "Om Namah Shivaya"</p>
+        </article>
 
-        <div class="bg-white shadow-lg rounded-xl p-6">
-          <img src="https://upload.wikimedia.org/wikipedia/commons/3/3f/Durga_Maa.jpg" alt="Goddess Durga" class="rounded-lg h-48 w-full object-cover mb-4">
-          <h3 class="font-semibold text-xl text-orange-700">Goddess Durga</h3>
-          <p class="text-gray-600">The goddess of strength and protection who destroys evil and brings harmony.</p>
-        </div>
+        <!-- Durga -->
+        <article class="bg-white rounded-xl shadow p-6">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/3/3f/Durga_Maa.jpg" alt="Goddess Durga" class="rounded-lg h-44 w-full object-cover mb-4">
+          <h3 class="text-xl font-semibold text-orange-700 mb-1">Goddess Durga</h3>
+          <p class="text-gray-600 mb-2">Divine mother and protector — destroys evil and restores Dharma.</p>
+          <p class="text-sm italic text-gray-500">Mantra: "Om Dum Durgayei Namaha"</p>
+        </article>
+      </div>
+
+      <div class="grid md:grid-cols-2 gap-8 mt-8">
+        <!-- Ganesha -->
+        <article class="bg-white rounded-xl shadow p-6 flex gap-4">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/Ganesha_Imam_Bargah.JPG" alt="Lord Ganesha" class="rounded-lg h-28 w-28 object-cover">
+          <div>
+            <h4 class="font-semibold text-orange-700">Lord Ganesha</h4>
+            <p class="text-gray-600">Remover of obstacles, patron of arts and sciences; worshipped at the start of new ventures.</p>
+            <p class="text-sm italic text-gray-500">Mantra: "Om Gam Ganapataye Namaha"</p>
+          </div>
+        </article>
+
+        <!-- Vishnu -->
+        <article class="bg-white rounded-xl shadow p-6 flex gap-4">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/5/5b/Vishnu_1.jpg" alt="Lord Vishnu" class="rounded-lg h-28 w-28 object-cover">
+          <div>
+            <h4 class="font-semibold text-orange-700">Lord Vishnu</h4>
+            <p class="text-gray-600">The preserver — protects dharma and appears in many avatars to restore balance.</p>
+            <p class="text-sm italic text-gray-500">Mantra: "Om Namo Bhagavate Vasudevaya"</p>
+          </div>
+        </article>
       </div>
     </div>
   </section>
 
-  <!-- Festivals -->
+  <!-- FESTIVALS -->
   <section id="festivals" class="py-16 bg-white">
     <div class="max-w-6xl mx-auto px-6 text-center">
-      <h2 class="text-3xl font-bold text-orange-700 mb-8">Hindu Festivals</h2>
-      <p class="text-gray-700 mb-10">Hindu festivals celebrate faith, joy, and devotion throughout the year.</p>
-      <div class="grid md:grid-cols-3 gap-8">
-        <div class="bg-orange-50 rounded-xl p-6 shadow">
-          <h3 class="font-semibold text-xl text-orange-700 mb-2">Diwali</h3>
-          <p class="text-gray-600">Festival of Lights celebrating the victory of good over evil.</p>
+      <h2 class="text-3xl font-bold text-orange-700 mb-6">Festivals</h2>
+      <p class="text-gray-700 mb-8">Important Hindu festivals with short descriptions and meanings.</p>
+
+      <div class="grid md:grid-cols-3 gap-6">
+        <div class="bg-orange-50 shadow rounded-xl p-6">
+          <h3 class="font-semibold text-lg text-orange-700">Durga Puja</h3>
+          <p class="text-gray-600">Celebrates Goddess Durga’s victory over Mahishasura; a time of devotion, art and community gatherings.</p>
         </div>
-        <div class="bg-orange-50 rounded-xl p-6 shadow">
-          <h3 class="font-semibold text-xl text-orange-700 mb-2">Janmashtami</h3>
-          <p class="text-gray-600">Marks the birth of Lord Krishna, celebrated with devotion and joy.</p>
+        <div class="bg-orange-50 shadow rounded-xl p-6">
+          <h3 class="font-semibold text-lg text-orange-700">Krishna Janmashtami</h3>
+          <p class="text-gray-600">Marks the birth of Lord Krishna; celebrated with singing, dancing and midnight bhajans.</p>
         </div>
-        <div class="bg-orange-50 rounded-xl p-6 shadow">
-          <h3 class="font-semibold text-xl text-orange-700 mb-2">Durga Puja</h3>
-          <p class="text-gray-600">A festival honoring Goddess Durga’s victory over the demon Mahishasura.</p>
+        <div class="bg-orange-50 shadow rounded-xl p-6">
+          <h3 class="font-semibold text-lg text-orange-700">Diwali</h3>
+          <p class="text-gray-600">Festival of Lights symbolizing the victory of light over darkness and good over evil.</p>
+        </div>
+        <div class="bg-orange-50 shadow rounded-xl p-6">
+          <h3 class="font-semibold text-lg text-orange-700">Rath Yatra</h3>
+          <p class="text-gray-600">Chariot festival (notably in Puri) honoring the deities when they move publicly to bless devotees.</p>
+        </div>
+        <div class="bg-orange-50 shadow rounded-xl p-6">
+          <h3 class="font-semibold text-lg text-orange-700">Saraswati Puja</h3>
+          <p class="text-gray-600">Honors Goddess Saraswati, the deity of knowledge, arts and learning.</p>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- Teachings -->
-  <section id="teachings" class="py-16 bg-orange-100">
-    <div class="max-w-5xl mx-auto px-6 text-center">
-      <h2 class="text-3xl font-bold text-orange-700 mb-6">Scriptures & Teachings</h2>
-      <p class="text-lg text-gray-700 mb-4">“You have the right to work, but not to the fruits of your action.” — Bhagavad Gita 2:47</p>
-      <p class="text-gray-600">The Bhagavad Gita, Vedas, and Upanishads teach humanity to live in truth, harmony, and devotion. These sacred scriptures guide people toward self-realization and inner peace.</p>
+  <!-- SCRIPTURES & TEACHINGS -->
+  <section id="scriptures" class="py-16 bg-orange-50">
+    <div class="max-w-6xl mx-auto px-6">
+      <h2 class="text-3xl font-bold text-orange-700 text-center mb-6">Scriptures & Teachings</h2>
+      <p class="text-center text-gray-700 mb-8">Key writings and short passages that guide practice and philosophy in Hinduism.</p>
+
+      <div class="grid md:grid-cols-3 gap-6">
+        <div class="bg-white rounded-xl shadow p-6">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/3/3a/Bhagavad_Gita_1868.jpg" alt="Bhagavad Gita" class="w-full h-44 object-cover rounded mb-4">
+          <h3 class="text-lg font-semibold text-orange-700">Bhagavad Gita</h3>
+          <p class="text-gray-600 mb-2">A dialogue between Krishna and Arjuna about duty, action and devotion.</p>
+          <blockquote class="italic text-sm text-gray-500">"You have the right to work, but not to the fruits of your actions." — Gita 2.47</blockquote>
+        </div>
+
+        <div class="bg-white rounded-xl shadow p-6">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/4/4e/Vedas.jpg" alt="Vedas" class="w-full h-44 object-cover rounded mb-4">
+          <h3 class="text-lg font-semibold text-orange-700">The Vedas</h3>
+          <p class="text-gray-600 mb-2">The oldest corpus of sacred hymns and ritual knowledge that underpins Hindu traditions.</p>
+          <blockquote class="italic text-sm text-gray-500">"Truth is one; sages call it by different names."</blockquote>
+        </div>
+
+        <div class="bg-white rounded-xl shadow p-6">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/2/26/Upanishads.jpg" alt="Upanishads" class="w-full h-44 object-cover rounded mb-4">
+          <h3 class="text-lg font-semibold text-orange-700">Upanishads</h3>
+          <p class="text-gray-600 mb-2">Mystical and philosophical texts that explore Atman (self) and Brahman (ultimate reality).</p>
+          <blockquote class="italic text-sm text-gray-500">"The Self is not born, nor does it die; it is eternal and indestructible."</blockquote>
+        </div>
+      </div>
     </div>
   </section>
 
-  <!-- Contact -->
-  <section id="contact" class="py-16 bg-white">
-    <div class="max-w-4xl mx-auto px-6 text-center">
-      <h2 class="text-3xl font-bold text-orange-700 mb-6">Contact Us</h2>
-      <p class="text-gray-700 mb-6">Feel free to reach out for spiritual guidance, collaboration, or inquiries.</p>
-      <form class="grid gap-4 max-w-md mx-auto">
-        <input type="text" placeholder="Your Name" class="border rounded-lg p-3 focus:outline-none focus:ring-2 focus:ring-orange-500">
-        <input type="email" placeholder="Your Email" class="border rounded-lg p-3 focus:outline-none focus:ring-2 focus:ring-orange-500">
-        <textarea placeholder="Your Message" rows="4" class="border rounded-lg p-3 focus:outline-none focus:ring-2 focus:ring-orange-500"></textarea>
-        <button class="bg-orange-600 text-white py-3 rounded-lg font-semibold hover:bg-orange-700">Send Message</button>
-      </form>
-    </div>
-  </section>
+  <!-- TEMPLES -->
+  <section id="temples" class="py-16 bg-white">
+    <div class="max-w-6xl mx-auto px-6">
+      <h2 class="text-3xl font-bold text-orange-700 text-center mb-6">Famous Temples</h2>
+      <p class="text-center text-gray-700 mb-8">A few notable temples from India and Bangladesh with short histories and locations.</p>
 
-  <!-- Footer -->
-  <footer class="bg-orange-700 text-white py-6 text-center">
-    <p>© 2025 Sanatan Dharma. All Rights Reserved.</p>
-    <div class="mt-3 space-x-4">
-      <a href="#" class="hover:text-yellow-300">Facebook</a>
-      <a href="#" class="hover:text-yellow-300">Instagram</a>
-      <a href="#" class="hover:text-yellow-300">YouTube</a>
-    </div>
-  </footer>
+      <div class="grid md:grid-cols-3 gap-6">
+        <div class="bg-orange-50 rounded-xl p-5 shadow">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/8/8d/Temple_in_Puri.jpg" alt="Jagannath Puri" class="w-full h-44 object-cover rounded mb-3">
+          <h3 class="font-semibold text-orange-700">Jagannath Temple, Puri (India)</h3>
+          <p class="text-gray-600">One of the Char Dham pilgrimage sites. Famous for the annual Rath Yatra (chariot festival).</p>
+        </div>
 
-</body>
-</html>
+        <div class="bg-orange-50 rounded-xl p-5 shadow">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/7/7f/Dakshineswar_Temple.jpg" alt="Dakshineswar" class="w-full h-44 object-cover rounded mb-3">
+          <h3 class="font-semibold text-orange-700">Dakshineswar Kali Temple (India)</h3>
+          <p class="text-gray-600">Famous Kali temple near Kolkata; known for spiritual gatherings and Ramakrishna's association.</p>
+        </div>
+
+        <div class="bg-orange-50 rounded-xl p-5 shadow">
+          <img src="https://u
