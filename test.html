@@ -1,65 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Responsive Navbar</title>
-  <!-- Tailwind CDN -->
-  <script src="https://cdn.tailwindcss.com"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Test</title>
 </head>
-<body class="bg-gray-100">
-
-  <!-- NAVBAR -->
-  <nav class="bg-[#242424] text-white px-4 sm:px-6 py-4 sticky top-0 z-50">
-    <div class="max-w-7xl mx-auto flex items-center justify-between">
-      <!-- Logo -->
-      <div class="flex items-center gap-3">
-        <span class="text-2xl">ॐ</span>
-        <span class="text-lg font-semibold">Hare Krishna</span>
-      </div>
-
-      <!-- Desktop links -->
-      <ul class="hidden md:flex items-center gap-8 font-medium">
-        <li><a href="index.html" class="hover:text-yellow-400">Home</a></li>
-        <li><a href="about.html" class="hover:text-yellow-400">About</a></li>
-        <li><a href="books.html" class="hover:text-yellow-400">Books</a></li>
-        <li><a href="festivals.html" class="hover:text-yellow-400">Festivals</a></li>
-        <li><a href="contact.html" class="hover:text-yellow-400">Contact</a></li>
-      </ul>
-
-      <!-- Mobile button -->
-      <button
-        id="menu-btn"
-        aria-controls="mobile-menu"
-        aria-expanded="false"
-        class="md:hidden p-2 rounded focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-orange-400"
-        title="Open menu"
-      >
-        <!-- simple icon char; can be replaced with SVG -->
-        <span class="text-3xl select-none">☰</span>
-      </button>
-    </div>
-  </nav>
-
-  <!-- Mobile dropdown (hidden by default) -->
-  <div id="mobile-menu" class="hidden md:hidden bg-[#2d2d2d] text-white">
-    <div class="max-w-7xl mx-auto px-4 py-4 flex flex-col gap-3">
-      <a href="index.html" class="block py-2 px-2 rounded hover:bg-[#3a3a3a]">Home</a>
-      <a href="about.html" class="block py-2 px-2 rounded hover:bg-[#3a3a3a]">About</a>
-      <a href="books.html" class="block py-2 px-2 rounded hover:bg-[#3a3a3a]">Books</a>
-      <a href="festivals.html" class="block py-2 px-2 rounded hover:bg-[#3a3a3a]">Festivals</a>
-      <a href="contact.html" class="block py-2 px-2 rounded hover:bg-[#3a3a3a]">Contact</a>
-    </div>
-  </div>
-
-  <!-- Optional page content for testing -->
-  <main class="max-w-7xl mx-auto p-6">
-    <h1 class="text-2xl font-bold mb-4">Page content</h1>
-    <p>Scroll down and test the mobile menu toggle, outside click, and Escape key close.</p>
-    <div style="height:1200px"></div>
-  </main>
-
-  <!-- Script -->
-  <script src="styles/navbar.js"></script>
+<body>
+  
 </body>
 </html>
