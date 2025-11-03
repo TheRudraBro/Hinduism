@@ -1,34 +1,3 @@
-├── Images
-    ├── BhagavadGita.jpeg
-    ├── Ramayana.jpeg
-    ├── Upanishad.jpeg
-    ├── facebook.png
-    ├── github-mark-white.png
-    ├── insta.png
-    ├── krishna-lord.jpg
-    ├── puran.jpg
-    ├── wall1.jpg
-    ├── wall2.jpg
-    ├── wall3.jpg
-    ├── wall4.jpg
-    ├── wall5.jpg
-    └── wall6.jpg
-├── about.html
-├── assets
-    ├── booksbg.jpg
-    ├── homebg.jpg
-    ├── servicesbg.jpg
-    └── wallpaperflare.com_wallpaper (16).jpg
-├── books.html
-├── festibals.html
-├── index.html
-├── japa.html
-├── mala.html
-├── styles
-    ├── books.css
-    ├── books.js
-    ├── navbar.js
-    ├── script.js
-    └── style.css
-├── tailwind.config.js
-└── test.html
+# Hare Krishna
+---------------------------------------------------------------------------------------------------------------------------
+# Hinduism Website
