@@ -59,16 +59,31 @@
 
     <header>
 <!-- Hero Section -->
-<div class="relative h-screen w-full bg-cover bg-center" style="background-image: url('assets/homebg.jpg');">
+  <div class="relative w-full h-[90vh] sm:h-screen bg-cover bg-center" style="background-image: url('assets/homebg.jpg');">
+    <!-- Overlay -->
     <div class="absolute inset-0 bg-black bg-opacity-65"></div>
     <div class="relative flex flex-col items-center justify-center h-full text-center text-white px-4">
-        <h1 class="text-5xl font-bold mb-4">Welcome to Divine Vibes</h1>
-        <p class="text-lg max-w-2xl">Experience peace, spirituality, and devotion through art and meditation.</p>
-        <p class="text-lg max-w-2xl">We Hindus believe that the Vedas transcend all time and don’t have <br> 
-        a beginning or an end. We Believe in More than Crore’s Gods.</p>
-        <div class="mt-10">
-            <a href="japa.html" class="bg-orange-600 hover:bg-orange-700 text-white font-semibold py-3 px-6 rounded-lg shadow-lg transition duration-300">Explore More</a>
-    </div>
+          <div class="relative flex flex-col items-center justify-center h-full text-center text-white px-4 sm:px-6 lg:px-8">
+      <h1 class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-extrabold mb-4 leading-snug">
+        Welcome to Divine Vibes
+      </h1>
+      
+      <p class="text-base sm:text-lg md:text-xl max-w-2xl mb-3 leading-relaxed">
+        Experience peace, spirituality, <br> and devotion through art and meditation.
+      </p>
+
+      <p class="text-base sm:text-lg md:text-xl max-w-2xl leading-relaxed">
+        We Hindus believe that the Vedas transcend all time and don’t have 
+        <br class="hidden sm:block"> 
+        a beginning or an end. We Believe in More than Crore’s Gods.
+      </p>
+        <!-- Button -->
+      <div class="mt-8 sm:mt-10">
+        <a href="japa.html" 
+           class="bg-orange-600 hover:bg-orange-700 text-white font-semibold py-3 px-6 rounded-lg shadow-lg transition duration-300">
+          Explore More
+        </a>
+      </div>
 </div>
 </div>
     </header>
@@ -76,40 +91,45 @@
 
     <main>
 <!-- History of Hinduism Section -->
- <section>
+ <section class="py-12 px-4 bg-gray-50">
 
-  <div class="about-item items-center max-w-[1200px] mx-auto p-15 gap-10">
-<div>
-    <h1 class="text-3xl text-black text-center font-extrabold">History Of Hinduism</h1>
-   <div class="mt-4 text-gray-800 rounded-xl p-6 bg-white shadow-2xl space-y-4">
-  <p class="text-left pl-4 font-serif">
-    Hinduism, the world’s oldest religion, originated over 5,000 years ago in ancient India and has no single founder.
-  </p>
-  <p class="text-left pl-4 font-serif">
-    It developed from the spiritual and cultural traditions of the Indus Valley Civilization. Its sacred texts include the Vedas, Upanishads, Ramayana, Mahabharata, and the Bhagavad Gita.
-  </p>
-  <p class="text-left pl-4 font-serif">
-    Hindus believe in one supreme reality (Brahman) and follow key principles like Dharma (righteous duty), Karma (law of actions and consequences), Samsara (cycle of birth and rebirth), and Moksha (liberation from rebirth).
-  </p>
-  <p class="text-left pl-4 font-serif">
-    Worship includes puja, meditation, chanting mantras, and yoga. Hinduism has many deities, including Brahma (creator), Vishnu (preserver), Shiva (destroyer), Lakshmi (wealth), Saraswati (knowledge), and Durga (power).
-  </p>
-  <p class="text-left pl-4 font-serif">
-    Major festivals like Diwali, Holi, Janmashtami, and Maha Shivaratri celebrate spiritual and cultural values. Symbols such as Om, the Swastika, and the Lotus Flower represent divine truth, prosperity, and purity.
-  </p>
-  <p class="text-left pl-4 font-serif">
-    Hinduism emphasizes non-violence (Ahimsa), tolerance, respect for nature, and spiritual growth, encouraging individuals to live ethically, seek knowledge, and achieve unity with the divine.
-  </p>
-</div>
-
-    <div class="mt-6 text-center">
-            <a href="about.html" class="bg-orange-600 hover:bg-orange-700 text-center text-white font-semibold py-3 px-6 rounded-lg shadow-lg transition duration-300">More Details</a>
+  <div class="max-w-[1200px] mx-auto flex flex-col items-center gap-10">
+<h1 class="text-3xl md:text-4xl font-extrabold text-center text-black">
+  History Of Hinduism
+</h1>
+ <div class="w-full bg-white shadow-2xl rounded-xl p-6 md:p-10 space-y-4 text-gray-800">
+      <p class="text-left font-serif leading-relaxed">
+        Hinduism, the world’s oldest religion, originated over 5,000 years ago in ancient India and has no single founder.
+      </p>
+      <p class="text-left font-serif leading-relaxed">
+        It developed from the spiritual and cultural traditions of the Indus Valley Civilization. Its sacred texts include the Vedas, Upanishads, Ramayana, Mahabharata, and the Bhagavad Gita.
+      </p>
+      <p class="text-left font-serif leading-relaxed">
+        Hindus believe in one supreme reality (Brahman) and follow key principles like Dharma (righteous duty), Karma (law of actions and consequences), Samsara (cycle of birth and rebirth), and Moksha (liberation from rebirth).
+      </p>
+      <p class="text-left font-serif leading-relaxed">
+        Worship includes puja, meditation, chanting mantras, and yoga. Hinduism has many deities, including Brahma (creator), Vishnu (preserver), Shiva (destroyer), Lakshmi (wealth), Saraswati (knowledge), and Durga (power).
+      </p>
+      <p class="text-left font-serif leading-relaxed">
+        Major festivals like Diwali, Holi, Janmashtami, and Maha Shivaratri celebrate spiritual and cultural values. Symbols such as Om, the Swastika, and the Lotus Flower represent divine truth, prosperity, and purity.
+      </p>
+      <p class="text-left font-serif leading-relaxed">
+        Hinduism emphasizes non-violence (Ahimsa), tolerance, respect for nature, and spiritual growth, encouraging individuals to live ethically, seek knowledge, and achieve unity with the divine.
+      </p>
     </div>
-   </div>
-  </div>
 
+    <!-- Button -->
+    <div class="text-center">
+      <a href="about.html" 
+         class="bg-orange-600 hover:bg-orange-700 text-white font-semibold py-3 px-6 rounded-lg shadow-lg transition duration-300">
+        More Details
+      </a>
+    </div>
+
+  </div>
  </section>
  <!-- History of Hinduism section close -->
+  <!-- Responsive complete -->
 
 <section class="max-w-[1400px] mx-auto px-4 py-8 text-center mt-10 mb-10">
   <!-- Lord Section -->
@@ -142,6 +162,7 @@
 
 </section>
 <!-- Lord Section close -->
+ <!-- Responsive complete -->
 
 
 
